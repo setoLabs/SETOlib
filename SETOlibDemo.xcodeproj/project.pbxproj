@@ -13,10 +13,42 @@
 		9E62EE7416CE5DBC007BEE5B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E62EE7216CE5DBC007BEE5B /* InfoPlist.strings */; };
 		9E62EE7616CE5DBC007BEE5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E62EE7516CE5DBC007BEE5B /* main.m */; };
 		9E62EE7A16CE5DBC007BEE5B /* SETOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E62EE7916CE5DBC007BEE5B /* SETOAppDelegate.m */; };
-		9E62EE7C16CE5DBC007BEE5B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E62EE7B16CE5DBC007BEE5B /* Default.png */; };
-		9E62EE7E16CE5DBC007BEE5B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E62EE7D16CE5DBC007BEE5B /* Default@2x.png */; };
-		9E62EE8016CE5DBC007BEE5B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E62EE7F16CE5DBC007BEE5B /* Default-568h@2x.png */; };
+		9E62EE8A16CE5DCD007BEE5B /* SETOExamplesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E62EE8716CE5DCD007BEE5B /* SETOExamplesTableViewController.m */; };
+		9E62EE8B16CE5DCD007BEE5B /* SETOWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E62EE8916CE5DCD007BEE5B /* SETOWelcomeViewController.m */; };
+		9E62EE9116CE5FFE007BEE5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E62EE6B16CE5DBC007BEE5B /* Foundation.framework */; };
+		9E62EEA216CE6056007BEE5B /* SETOSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E62EEA116CE6056007BEE5B /* SETOSplashScreen.m */; };
+		9E62EEA516CE6A22007BEE5B /* libSETOlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E62EE9016CE5FFE007BEE5B /* libSETOlib.a */; };
+		9E62EEAE16CE6A5E007BEE5B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E62EEA716CE6A5E007BEE5B /* Default-568h@2x.png */; };
+		9E62EEAF16CE6A5E007BEE5B /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E62EEA816CE6A5E007BEE5B /* Default-Landscape.png */; };
+		9E62EEB016CE6A5E007BEE5B /* Default-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E62EEA916CE6A5E007BEE5B /* Default-Landscape@2x.png */; };
+		9E62EEB116CE6A5E007BEE5B /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E62EEAA16CE6A5E007BEE5B /* Default-Portrait.png */; };
+		9E62EEB216CE6A5E007BEE5B /* Default-Portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E62EEAB16CE6A5E007BEE5B /* Default-Portrait@2x.png */; };
+		9E62EEB316CE6A5E007BEE5B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E62EEAC16CE6A5E007BEE5B /* Default.png */; };
+		9E62EEB416CE6A5E007BEE5B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E62EEAD16CE6A5E007BEE5B /* Default@2x.png */; };
+		9E62EEB816CE6B94007BEE5B /* SETOSplashScreenDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E62EEB716CE6B94007BEE5B /* SETOSplashScreenDemo.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9E62EEA316CE6A1E007BEE5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E62EE5E16CE5DBC007BEE5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E62EE8F16CE5FFE007BEE5B;
+			remoteInfo = SETOlib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9E62EE8E16CE5FFE007BEE5B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9E62EE6616CE5DBC007BEE5B /* SETOlibDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SETOlibDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +64,23 @@
 		9E62EE7B16CE5DBC007BEE5B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		9E62EE7D16CE5DBC007BEE5B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		9E62EE7F16CE5DBC007BEE5B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		9E62EE8616CE5DCD007BEE5B /* SETOExamplesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETOExamplesTableViewController.h; sourceTree = "<group>"; };
+		9E62EE8716CE5DCD007BEE5B /* SETOExamplesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SETOExamplesTableViewController.m; sourceTree = "<group>"; };
+		9E62EE8816CE5DCD007BEE5B /* SETOWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETOWelcomeViewController.h; sourceTree = "<group>"; };
+		9E62EE8916CE5DCD007BEE5B /* SETOWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SETOWelcomeViewController.m; sourceTree = "<group>"; };
+		9E62EE9016CE5FFE007BEE5B /* libSETOlib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSETOlib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E62EE9416CE5FFE007BEE5B /* SETOlib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SETOlib-Prefix.pch"; sourceTree = "<group>"; };
+		9E62EEA016CE6056007BEE5B /* SETOSplashScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETOSplashScreen.h; sourceTree = "<group>"; };
+		9E62EEA116CE6056007BEE5B /* SETOSplashScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SETOSplashScreen.m; sourceTree = "<group>"; };
+		9E62EEA716CE6A5E007BEE5B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		9E62EEA816CE6A5E007BEE5B /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
+		9E62EEA916CE6A5E007BEE5B /* Default-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x.png"; sourceTree = "<group>"; };
+		9E62EEAA16CE6A5E007BEE5B /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
+		9E62EEAB16CE6A5E007BEE5B /* Default-Portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x.png"; sourceTree = "<group>"; };
+		9E62EEAC16CE6A5E007BEE5B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		9E62EEAD16CE6A5E007BEE5B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		9E62EEB616CE6B94007BEE5B /* SETOSplashScreenDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SETOSplashScreenDemo.h; path = Examples/SETOSplashScreenDemo.h; sourceTree = "<group>"; };
+		9E62EEB716CE6B94007BEE5B /* SETOSplashScreenDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SETOSplashScreenDemo.m; path = Examples/SETOSplashScreenDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,9 +88,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E62EEA516CE6A22007BEE5B /* libSETOlib.a in Frameworks */,
 				9E62EE6A16CE5DBC007BEE5B /* UIKit.framework in Frameworks */,
 				9E62EE6C16CE5DBC007BEE5B /* Foundation.framework in Frameworks */,
 				9E62EE6E16CE5DBC007BEE5B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E62EE8D16CE5FFE007BEE5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E62EE9116CE5FFE007BEE5B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				9E62EE6F16CE5DBC007BEE5B /* SETOlibDemo */,
+				9E62EE9216CE5FFE007BEE5B /* SETOlib */,
 				9E62EE6816CE5DBC007BEE5B /* Frameworks */,
 				9E62EE6716CE5DBC007BEE5B /* Products */,
 			);
@@ -61,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				9E62EE6616CE5DBC007BEE5B /* SETOlibDemo.app */,
+				9E62EE9016CE5FFE007BEE5B /* libSETOlib.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +140,12 @@
 			children = (
 				9E62EE7816CE5DBC007BEE5B /* SETOAppDelegate.h */,
 				9E62EE7916CE5DBC007BEE5B /* SETOAppDelegate.m */,
+				9E62EE8616CE5DCD007BEE5B /* SETOExamplesTableViewController.h */,
+				9E62EE8716CE5DCD007BEE5B /* SETOExamplesTableViewController.m */,
+				9E62EE8816CE5DCD007BEE5B /* SETOWelcomeViewController.h */,
+				9E62EE8916CE5DCD007BEE5B /* SETOWelcomeViewController.m */,
+				9E62EEB516CE6B72007BEE5B /* Examples */,
+				9E62EEA616CE6A5E007BEE5B /* Resources */,
 				9E62EE7016CE5DBC007BEE5B /* Supporting Files */,
 			);
 			path = SETOlibDemo;
@@ -99,6 +165,55 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9E62EE9216CE5FFE007BEE5B /* SETOlib */ = {
+			isa = PBXGroup;
+			children = (
+				9E62EE9F16CE6056007BEE5B /* SETOSplashScreen */,
+				9E62EE9316CE5FFE007BEE5B /* Supporting Files */,
+			);
+			path = SETOlib;
+			sourceTree = "<group>";
+		};
+		9E62EE9316CE5FFE007BEE5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E62EE9416CE5FFE007BEE5B /* SETOlib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E62EE9F16CE6056007BEE5B /* SETOSplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9E62EEA016CE6056007BEE5B /* SETOSplashScreen.h */,
+				9E62EEA116CE6056007BEE5B /* SETOSplashScreen.m */,
+			);
+			path = SETOSplashScreen;
+			sourceTree = "<group>";
+		};
+		9E62EEA616CE6A5E007BEE5B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9E62EEA716CE6A5E007BEE5B /* Default-568h@2x.png */,
+				9E62EEA816CE6A5E007BEE5B /* Default-Landscape.png */,
+				9E62EEA916CE6A5E007BEE5B /* Default-Landscape@2x.png */,
+				9E62EEAA16CE6A5E007BEE5B /* Default-Portrait.png */,
+				9E62EEAB16CE6A5E007BEE5B /* Default-Portrait@2x.png */,
+				9E62EEAC16CE6A5E007BEE5B /* Default.png */,
+				9E62EEAD16CE6A5E007BEE5B /* Default@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9E62EEB516CE6B72007BEE5B /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				9E62EEB616CE6B94007BEE5B /* SETOSplashScreenDemo.h */,
+				9E62EEB716CE6B94007BEE5B /* SETOSplashScreenDemo.m */,
+			);
+			name = Examples;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,11 +228,29 @@
 			buildRules = (
 			);
 			dependencies = (
+				9E62EEA416CE6A1E007BEE5B /* PBXTargetDependency */,
 			);
 			name = SETOlibDemo;
 			productName = SETOlibDemo;
 			productReference = 9E62EE6616CE5DBC007BEE5B /* SETOlibDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		9E62EE8F16CE5FFE007BEE5B /* SETOlib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E62EE9916CE5FFE007BEE5B /* Build configuration list for PBXNativeTarget "SETOlib" */;
+			buildPhases = (
+				9E62EE8C16CE5FFE007BEE5B /* Sources */,
+				9E62EE8D16CE5FFE007BEE5B /* Frameworks */,
+				9E62EE8E16CE5FFE007BEE5B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SETOlib;
+			productName = SETOlib;
+			productReference = 9E62EE9016CE5FFE007BEE5B /* libSETOlib.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -142,6 +275,7 @@
 			projectRoot = "";
 			targets = (
 				9E62EE6516CE5DBC007BEE5B /* SETOlibDemo */,
+				9E62EE8F16CE5FFE007BEE5B /* SETOlib */,
 			);
 		};
 /* End PBXProject section */
@@ -152,9 +286,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E62EE7416CE5DBC007BEE5B /* InfoPlist.strings in Resources */,
-				9E62EE7C16CE5DBC007BEE5B /* Default.png in Resources */,
-				9E62EE7E16CE5DBC007BEE5B /* Default@2x.png in Resources */,
-				9E62EE8016CE5DBC007BEE5B /* Default-568h@2x.png in Resources */,
+				9E62EEAE16CE6A5E007BEE5B /* Default-568h@2x.png in Resources */,
+				9E62EEAF16CE6A5E007BEE5B /* Default-Landscape.png in Resources */,
+				9E62EEB016CE6A5E007BEE5B /* Default-Landscape@2x.png in Resources */,
+				9E62EEB116CE6A5E007BEE5B /* Default-Portrait.png in Resources */,
+				9E62EEB216CE6A5E007BEE5B /* Default-Portrait@2x.png in Resources */,
+				9E62EEB316CE6A5E007BEE5B /* Default.png in Resources */,
+				9E62EEB416CE6A5E007BEE5B /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,10 +305,29 @@
 			files = (
 				9E62EE7616CE5DBC007BEE5B /* main.m in Sources */,
 				9E62EE7A16CE5DBC007BEE5B /* SETOAppDelegate.m in Sources */,
+				9E62EE8A16CE5DCD007BEE5B /* SETOExamplesTableViewController.m in Sources */,
+				9E62EE8B16CE5DCD007BEE5B /* SETOWelcomeViewController.m in Sources */,
+				9E62EEB816CE6B94007BEE5B /* SETOSplashScreenDemo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E62EE8C16CE5FFE007BEE5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E62EEA216CE6056007BEE5B /* SETOSplashScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9E62EEA416CE6A1E007BEE5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E62EE8F16CE5FFE007BEE5B /* SETOlib */;
+			targetProxy = 9E62EEA316CE6A1E007BEE5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9E62EE7216CE5DBC007BEE5B /* InfoPlist.strings */ = {
@@ -248,6 +405,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SETOlibDemo/SETOlibDemo-Prefix.pch";
 				INFOPLIST_FILE = "SETOlibDemo/SETOlibDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -259,8 +417,33 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SETOlibDemo/SETOlibDemo-Prefix.pch";
 				INFOPLIST_FILE = "SETOlibDemo/SETOlibDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9E62EE9A16CE5FFE007BEE5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SETOlib.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SETOlib/SETOlib-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9E62EE9B16CE5FFE007BEE5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SETOlib.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SETOlib/SETOlib-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -281,6 +464,14 @@
 			buildConfigurations = (
 				9E62EE8416CE5DBC007BEE5B /* Debug */,
 				9E62EE8516CE5DBC007BEE5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9E62EE9916CE5FFE007BEE5B /* Build configuration list for PBXNativeTarget "SETOlib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E62EE9A16CE5FFE007BEE5B /* Debug */,
+				9E62EE9B16CE5FFE007BEE5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

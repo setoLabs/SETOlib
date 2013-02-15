@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface SETOAppDelegate : UIResponder <UIApplicationDelegate>
-
+@property (strong, nonatomic) UINavigationController *navigationController;
+@property (strong, nonatomic) UISplitViewController *splitViewController;
 @property (strong, nonatomic) UIWindow *window;
 
 @end
