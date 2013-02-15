@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E62EE6A16CE5DBC007BEE5B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E62EE6916CE5DBC007BEE5B /* UIKit.framework */; };
+		9E62EE6C16CE5DBC007BEE5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E62EE6B16CE5DBC007BEE5B /* Foundation.framework */; };
+		9E62EE6E16CE5DBC007BEE5B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E62EE6D16CE5DBC007BEE5B /* CoreGraphics.framework */; };
+		9E62EE7416CE5DBC007BEE5B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E62EE7216CE5DBC007BEE5B /* InfoPlist.strings */; };
+		9E62EE7616CE5DBC007BEE5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E62EE7516CE5DBC007BEE5B /* main.m */; };
+		9E62EE7A16CE5DBC007BEE5B /* SETOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E62EE7916CE5DBC007BEE5B /* SETOAppDelegate.m */; };
+		9E62EE7C16CE5DBC007BEE5B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E62EE7B16CE5DBC007BEE5B /* Default.png */; };
+		9E62EE7E16CE5DBC007BEE5B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E62EE7D16CE5DBC007BEE5B /* Default@2x.png */; };
+		9E62EE8016CE5DBC007BEE5B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E62EE7F16CE5DBC007BEE5B /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9E62EE6616CE5DBC007BEE5B /* SETOlibDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SETOlibDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E62EE6916CE5DBC007BEE5B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9E62EE6B16CE5DBC007BEE5B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9E62EE6D16CE5DBC007BEE5B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9E62EE7116CE5DBC007BEE5B /* SETOlibDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SETOlibDemo-Info.plist"; sourceTree = "<group>"; };
+		9E62EE7316CE5DBC007BEE5B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9E62EE7516CE5DBC007BEE5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9E62EE7716CE5DBC007BEE5B /* SETOlibDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SETOlibDemo-Prefix.pch"; sourceTree = "<group>"; };
+		9E62EE7816CE5DBC007BEE5B /* SETOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SETOAppDelegate.h; sourceTree = "<group>"; };
+		9E62EE7916CE5DBC007BEE5B /* SETOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SETOAppDelegate.m; sourceTree = "<group>"; };
+		9E62EE7B16CE5DBC007BEE5B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		9E62EE7D16CE5DBC007BEE5B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		9E62EE7F16CE5DBC007BEE5B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E62EE6316CE5DBC007BEE5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E62EE6A16CE5DBC007BEE5B /* UIKit.framework in Frameworks */,
+				9E62EE6C16CE5DBC007BEE5B /* Foundation.framework in Frameworks */,
+				9E62EE6E16CE5DBC007BEE5B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E62EE5D16CE5DBC007BEE5B = {
+			isa = PBXGroup;
+			children = (
+				9E62EE6F16CE5DBC007BEE5B /* SETOlibDemo */,
+				9E62EE6816CE5DBC007BEE5B /* Frameworks */,
+				9E62EE6716CE5DBC007BEE5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9E62EE6716CE5DBC007BEE5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E62EE6616CE5DBC007BEE5B /* SETOlibDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E62EE6816CE5DBC007BEE5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E62EE6916CE5DBC007BEE5B /* UIKit.framework */,
+				9E62EE6B16CE5DBC007BEE5B /* Foundation.framework */,
+				9E62EE6D16CE5DBC007BEE5B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E62EE6F16CE5DBC007BEE5B /* SETOlibDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9E62EE7816CE5DBC007BEE5B /* SETOAppDelegate.h */,
+				9E62EE7916CE5DBC007BEE5B /* SETOAppDelegate.m */,
+				9E62EE7016CE5DBC007BEE5B /* Supporting Files */,
+			);
+			path = SETOlibDemo;
+			sourceTree = "<group>";
+		};
+		9E62EE7016CE5DBC007BEE5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E62EE7116CE5DBC007BEE5B /* SETOlibDemo-Info.plist */,
+				9E62EE7216CE5DBC007BEE5B /* InfoPlist.strings */,
+				9E62EE7516CE5DBC007BEE5B /* main.m */,
+				9E62EE7716CE5DBC007BEE5B /* SETOlibDemo-Prefix.pch */,
+				9E62EE7B16CE5DBC007BEE5B /* Default.png */,
+				9E62EE7D16CE5DBC007BEE5B /* Default@2x.png */,
+				9E62EE7F16CE5DBC007BEE5B /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E62EE6516CE5DBC007BEE5B /* SETOlibDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E62EE8316CE5DBC007BEE5B /* Build configuration list for PBXNativeTarget "SETOlibDemo" */;
+			buildPhases = (
+				9E62EE6216CE5DBC007BEE5B /* Sources */,
+				9E62EE6316CE5DBC007BEE5B /* Frameworks */,
+				9E62EE6416CE5DBC007BEE5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SETOlibDemo;
+			productName = SETOlibDemo;
+			productReference = 9E62EE6616CE5DBC007BEE5B /* SETOlibDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E62EE5E16CE5DBC007BEE5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SETO;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = setolab.com;
+			};
+			buildConfigurationList = 9E62EE6116CE5DBC007BEE5B /* Build configuration list for PBXProject "SETOlibDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9E62EE5D16CE5DBC007BEE5B;
+			productRefGroup = 9E62EE6716CE5DBC007BEE5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E62EE6516CE5DBC007BEE5B /* SETOlibDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E62EE6416CE5DBC007BEE5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E62EE7416CE5DBC007BEE5B /* InfoPlist.strings in Resources */,
+				9E62EE7C16CE5DBC007BEE5B /* Default.png in Resources */,
+				9E62EE7E16CE5DBC007BEE5B /* Default@2x.png in Resources */,
+				9E62EE8016CE5DBC007BEE5B /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E62EE6216CE5DBC007BEE5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E62EE7616CE5DBC007BEE5B /* main.m in Sources */,
+				9E62EE7A16CE5DBC007BEE5B /* SETOAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9E62EE7216CE5DBC007BEE5B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E62EE7316CE5DBC007BEE5B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E62EE8116CE5DBC007BEE5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9E62EE8216CE5DBC007BEE5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E62EE8416CE5DBC007BEE5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SETOlibDemo/SETOlibDemo-Prefix.pch";
+				INFOPLIST_FILE = "SETOlibDemo/SETOlibDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9E62EE8516CE5DBC007BEE5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SETOlibDemo/SETOlibDemo-Prefix.pch";
+				INFOPLIST_FILE = "SETOlibDemo/SETOlibDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E62EE6116CE5DBC007BEE5B /* Build configuration list for PBXProject "SETOlibDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E62EE8116CE5DBC007BEE5B /* Debug */,
+				9E62EE8216CE5DBC007BEE5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E62EE8316CE5DBC007BEE5B /* Build configuration list for PBXNativeTarget "SETOlibDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E62EE8416CE5DBC007BEE5B /* Debug */,
+				9E62EE8516CE5DBC007BEE5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E62EE5E16CE5DBC007BEE5B /* Project object */;
+}
