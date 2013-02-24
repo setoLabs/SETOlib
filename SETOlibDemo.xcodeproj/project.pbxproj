@@ -272,7 +272,7 @@
 			attributes = {
 				CLASSPREFIX = SETO;
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = setolab.com;
+				ORGANIZATIONNAME = setolabs.com;
 			};
 			buildConfigurationList = 9E62EE6116CE5DBC007BEE5B /* Build configuration list for PBXProject "SETOlibDemo" */;
 			compatibilityVersion = "Xcode 3.2";
