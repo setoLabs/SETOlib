@@ -65,9 +65,6 @@
 		9E62EE7716CE5DBC007BEE5B /* SETOlibDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SETOlibDemo-Prefix.pch"; sourceTree = "<group>"; };
 		9E62EE7816CE5DBC007BEE5B /* SETOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SETOAppDelegate.h; sourceTree = "<group>"; };
 		9E62EE7916CE5DBC007BEE5B /* SETOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SETOAppDelegate.m; sourceTree = "<group>"; };
-		9E62EE7B16CE5DBC007BEE5B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		9E62EE7D16CE5DBC007BEE5B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		9E62EE7F16CE5DBC007BEE5B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9E62EE8616CE5DCD007BEE5B /* SETOExamplesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETOExamplesTableViewController.h; sourceTree = "<group>"; };
 		9E62EE8716CE5DCD007BEE5B /* SETOExamplesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SETOExamplesTableViewController.m; sourceTree = "<group>"; };
 		9E62EE8816CE5DCD007BEE5B /* SETOWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETOWelcomeViewController.h; sourceTree = "<group>"; };
@@ -166,9 +163,6 @@
 				9E62EE7216CE5DBC007BEE5B /* InfoPlist.strings */,
 				9E62EE7516CE5DBC007BEE5B /* main.m */,
 				9E62EE7716CE5DBC007BEE5B /* SETOlibDemo-Prefix.pch */,
-				9E62EE7B16CE5DBC007BEE5B /* Default.png */,
-				9E62EE7D16CE5DBC007BEE5B /* Default@2x.png */,
-				9E62EE7F16CE5DBC007BEE5B /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
