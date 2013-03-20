@@ -7,14 +7,18 @@
 //
 
 #import "SETOExamplesTableViewController.h"
-#import "SETOSplashScreenDemo.h"
 #import "SETOAppDelegate.h"
 
+//demos:
+#import "SETOSplashScreenDemo.h"
+#import "SETOBlockingAlertViewDemo.h"
+
 typedef enum {
-	SETOExampleSplashScreen
+	SETOExampleSplashScreen,
+	SETOExampleBlockingAlertView
 } SETOExamples;
 
-NSUInteger const SETOExampleCount = 1;
+NSUInteger const SETOExampleCount = 2;
 
 @implementation SETOExamplesTableViewController
 
@@ -49,6 +53,9 @@ NSUInteger const SETOExampleCount = 1;
 		case SETOExampleSplashScreen:
 			cell.textLabel.text = @"SETOSplashScreen";
 			break;
+		case SETOExampleBlockingAlertView:
+			cell.textLabel.text = @"SETOBlockingAlertView";
+			break;
 		default:
 			break;
 	}
@@ -60,6 +67,9 @@ NSUInteger const SETOExampleCount = 1;
 	switch (indexPath.row) {
 		case SETOExampleSplashScreen:
 			[self showExampleViewController:[[SETOSplashScreenDemo alloc] init]];
+			break;
+		case SETOExampleBlockingAlertView:
+			[self showExampleViewController:[[SETOBlockingAlertViewDemo alloc] init]];
 			break;
 		default:
 			break;
