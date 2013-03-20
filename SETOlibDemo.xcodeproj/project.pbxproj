@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9E233B7416F9DA6D00AE097D /* SETOBlockingAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E233B7316F9DA6D00AE097D /* SETOBlockingAlertView.m */; };
-		9E233B7716F9DC7000AE097D /* SETOBlockingAlertViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E233B7616F9DC7000AE097D /* SETOBlockingAlertViewDemo.m */; };
+		9E233B7E16F9F52D00AE097D /* SETOBlockingAlertViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E233B7D16F9F52D00AE097D /* SETOBlockingAlertViewDemo.m */; };
+		9E233B8116F9F55600AE097D /* SETOBlockingAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E233B8016F9F55600AE097D /* SETOBlockingAlertView.m */; };
 		9E62EE6A16CE5DBC007BEE5B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E62EE6916CE5DBC007BEE5B /* UIKit.framework */; };
 		9E62EE6C16CE5DBC007BEE5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E62EE6B16CE5DBC007BEE5B /* Foundation.framework */; };
 		9E62EE6E16CE5DBC007BEE5B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E62EE6D16CE5DBC007BEE5B /* CoreGraphics.framework */; };
@@ -57,10 +57,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9E233B7216F9DA6D00AE097D /* SETOBlockingAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETOBlockingAlertView.h; sourceTree = "<group>"; };
-		9E233B7316F9DA6D00AE097D /* SETOBlockingAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SETOBlockingAlertView.m; sourceTree = "<group>"; };
-		9E233B7516F9DC7000AE097D /* SETOBlockingAlertViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETOBlockingAlertViewDemo.h; sourceTree = "<group>"; };
-		9E233B7616F9DC7000AE097D /* SETOBlockingAlertViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SETOBlockingAlertViewDemo.m; sourceTree = "<group>"; };
+		9E233B7C16F9F52D00AE097D /* SETOBlockingAlertViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SETOBlockingAlertViewDemo.h; path = Examples/SETOBlockingAlertViewDemo.h; sourceTree = "<group>"; };
+		9E233B7D16F9F52D00AE097D /* SETOBlockingAlertViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SETOBlockingAlertViewDemo.m; path = Examples/SETOBlockingAlertViewDemo.m; sourceTree = "<group>"; };
+		9E233B7F16F9F55600AE097D /* SETOBlockingAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETOBlockingAlertView.h; sourceTree = "<group>"; };
+		9E233B8016F9F55600AE097D /* SETOBlockingAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SETOBlockingAlertView.m; sourceTree = "<group>"; };
 		9E62EE6616CE5DBC007BEE5B /* SETOlibDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SETOlibDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E62EE6916CE5DBC007BEE5B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9E62EE6B16CE5DBC007BEE5B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -117,6 +117,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E233B7816F9F4FF00AE097D /* SETOBlockingAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				9E233B7F16F9F55600AE097D /* SETOBlockingAlertView.h */,
+				9E233B8016F9F55600AE097D /* SETOBlockingAlertView.m */,
+			);
+			path = SETOBlockingAlertView;
+			sourceTree = "<group>";
+		};
 		9E62EE5D16CE5DBC007BEE5B = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +185,7 @@
 		9E62EE9216CE5FFE007BEE5B /* SETOlib */ = {
 			isa = PBXGroup;
 			children = (
+				9E233B7816F9F4FF00AE097D /* SETOBlockingAlertView */,
 				9E62EE9F16CE6056007BEE5B /* SETOSplashScreen */,
 				9E62EE9316CE5FFE007BEE5B /* Supporting Files */,
 			);
@@ -195,8 +205,6 @@
 			children = (
 				9E62EEA016CE6056007BEE5B /* SETOSplashScreen.h */,
 				9E62EEA116CE6056007BEE5B /* SETOSplashScreen.m */,
-				9E233B7216F9DA6D00AE097D /* SETOBlockingAlertView.h */,
-				9E233B7316F9DA6D00AE097D /* SETOBlockingAlertView.m */,
 			);
 			path = SETOSplashScreen;
 			sourceTree = "<group>";
@@ -222,10 +230,10 @@
 		9E62EEB516CE6B72007BEE5B /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				9E233B7C16F9F52D00AE097D /* SETOBlockingAlertViewDemo.h */,
+				9E233B7D16F9F52D00AE097D /* SETOBlockingAlertViewDemo.m */,
 				9E62EEB616CE6B94007BEE5B /* SETOSplashScreenDemo.h */,
 				9E62EEB716CE6B94007BEE5B /* SETOSplashScreenDemo.m */,
-				9E233B7516F9DC7000AE097D /* SETOBlockingAlertViewDemo.h */,
-				9E233B7616F9DC7000AE097D /* SETOBlockingAlertViewDemo.m */,
 			);
 			name = Examples;
 			sourceTree = "<group>";
@@ -328,7 +336,7 @@
 				9E62EE8A16CE5DCD007BEE5B /* SETOExamplesTableViewController.m in Sources */,
 				9E62EE8B16CE5DCD007BEE5B /* SETOWelcomeViewController.m in Sources */,
 				9E62EEB816CE6B94007BEE5B /* SETOSplashScreenDemo.m in Sources */,
-				9E233B7716F9DC7000AE097D /* SETOBlockingAlertViewDemo.m in Sources */,
+				9E233B7E16F9F52D00AE097D /* SETOBlockingAlertViewDemo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E62EEA216CE6056007BEE5B /* SETOSplashScreen.m in Sources */,
-				9E233B7416F9DA6D00AE097D /* SETOBlockingAlertView.m in Sources */,
+				9E233B8116F9F55600AE097D /* SETOBlockingAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
