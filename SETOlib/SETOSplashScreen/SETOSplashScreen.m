@@ -20,7 +20,7 @@ NSString *const kSETOSplashScreenFileExtension = @"png";
 
 @implementation SETOSplashScreen
 
-static SETOSplashScreen* visibleSplashScreen = nil;
+static SETOSplashScreen *visibleSplashScreen = nil;
 
 + (SETOSplashScreen*)show {
 	@synchronized(SETOSplashScreen.class) {
@@ -42,6 +42,10 @@ static SETOSplashScreen* visibleSplashScreen = nil;
 	[[SETOSplashScreen show] scaledFadeOut];
 }
 
++ (BOOL)isShown {
+	return (visibleSplashScreen != nil);
+}
+
 #pragma mark - hiding
 
 - (void)scaledFadeOut {
@@ -49,7 +53,7 @@ static SETOSplashScreen* visibleSplashScreen = nil;
 }
 
 - (void)scaledFadeOutWithDuration:(NSTimeInterval)duration {
-	[self hideWithAnimation:^(SETOSplashScreen *splashScreen){
+	[self hideWithAnimation:^(SETOSplashScreen *splashScreen) {
 		splashScreen.alpha = 0.0;
 		splashScreen.transform = CGAffineTransformScale(splashScreen.transform, 2.0, 2.0);
 	} duration:duration completion:nil];

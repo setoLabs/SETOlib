@@ -25,6 +25,11 @@
  */
 + (void)splash;
 
+/*!
+ * \brief returns if splash screen is being shown
+ */
++ (BOOL)isShown;
+
 #pragma mark - hiding
 
 /*!
