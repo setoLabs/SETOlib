@@ -32,6 +32,7 @@
 		9E718D4216CE7F00008AFC6F /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E718D3E16CE7F00008AFC6F /* Icon-72@2x.png */; };
 		9E718D4316CE7F00008AFC6F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E718D3F16CE7F00008AFC6F /* Icon.png */; };
 		9E718D4416CE7F00008AFC6F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E718D4016CE7F00008AFC6F /* Icon@2x.png */; };
+		9E91B36217FF18F3008CE707 /* SETOCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E91B36117FF18F3008CE707 /* SETOCommon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,8 @@
 		9E718D3E16CE7F00008AFC6F /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
 		9E718D3F16CE7F00008AFC6F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		9E718D4016CE7F00008AFC6F /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		9E91B36017FF18F3008CE707 /* SETOCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETOCommon.h; sourceTree = "<group>"; };
+		9E91B36117FF18F3008CE707 /* SETOCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SETOCommon.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +188,8 @@
 		9E62EE9216CE5FFE007BEE5B /* SETOlib */ = {
 			isa = PBXGroup;
 			children = (
+				9E91B36017FF18F3008CE707 /* SETOCommon.h */,
+				9E91B36117FF18F3008CE707 /* SETOCommon.m */,
 				9E233B7816F9F4FF00AE097D /* SETOBlockingAlertView */,
 				9E62EE9F16CE6056007BEE5B /* SETOSplashScreen */,
 				9E62EE9316CE5FFE007BEE5B /* Supporting Files */,
@@ -345,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E62EEA216CE6056007BEE5B /* SETOSplashScreen.m in Sources */,
+				9E91B36217FF18F3008CE707 /* SETOCommon.m in Sources */,
 				9E233B8116F9F55600AE097D /* SETOBlockingAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

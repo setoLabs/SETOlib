@@ -9,8 +9,10 @@
 #import "SETOSplashScreen.h"
 
 NSString *const kSETOSplashScreen4inchPostfix = @"-568h";
-NSString *const kSETOSplashScreenLandscapePostfix = @"-Landscape";
-NSString *const kSETOSplashScreenPortraitPostfix = @"-Portrait";
+NSString *const kSETOSplashScreenLandscapeWithStatusBarPostfix = @"-Landscape";
+NSString *const kSETOSplashScreenLandscapeWithoutStatusBarPostfix = @"-748h-Landscape";
+NSString *const kSETOSplashScreenPortraitWithStatusBarPostfix = @"-Portrait";
+NSString *const kSETOSplashScreenPortraitWithoutStatusBarPostfix = @"-1004h-Portrait";
 NSString *const kSETOSplashScreenRetinaPostfix = @"@2x";
 NSString *const kSETOSplashScreeniPhonePostfix = @"~iPhone";
 NSString *const kSETOSplashScreeniPadPostfix = @"~iPad";
@@ -25,7 +27,6 @@ static SETOSplashScreen* visibleSplashScreen = nil;
 		if (visibleSplashScreen == nil) {
 			visibleSplashScreen = [[SETOSplashScreen alloc] init];
 			[visibleSplashScreen performSelector:@selector(addToWindow) onThread:[NSThread mainThread] withObject:nil waitUntilDone:YES];
-
 		}
 	}
 	return visibleSplashScreen;
@@ -107,34 +108,42 @@ static SETOSplashScreen* visibleSplashScreen = nil;
 	
 	// iPhone 4" postfix (-568h)
 	if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone && [[UIScreen mainScreen] bounds].size.height == 568.0) {
-			splashScreenImageName = [self splashScreenImageName:splashScreenImageName WithPostifxIfExists:kSETOSplashScreen4inchPostfix];
+			splashScreenImageName = [self splashScreenImageName:splashScreenImageName withPostifxIfExists:kSETOSplashScreen4inchPostfix];
 	}
 	
 	// iPad userinterface orientation dependent postfix (-Landscape, -Portrait)
 	if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-		if (UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication] statusBarOrientation])) {
-			splashScreenImageName = [self splashScreenImageName:splashScreenImageName WithPostifxIfExists:kSETOSplashScreenLandscapePostfix];
+		if ([SETOCommon isBeforeSystemVersion:@"7.0"] && UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication] statusBarOrientation])) {
+			// <iOS 7.0 landscape
+			splashScreenImageName = [self splashScreenImageName:splashScreenImageName withPostifxIfExists:kSETOSplashScreenLandscapeWithoutStatusBarPostfix];
+		} else if ([SETOCommon isBeforeSystemVersion:@"7.0"] && UIInterfaceOrientationIsPortrait([[UIApplication sharedApplication] statusBarOrientation])) {
+			// <iOS 7.0 portrait
+			splashScreenImageName = [self splashScreenImageName:splashScreenImageName withPostifxIfExists:kSETOSplashScreenPortraitWithoutStatusBarPostfix];
+		} else if (UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication] statusBarOrientation])) {
+			// iOS 7.0+ landscape
+			splashScreenImageName = [self splashScreenImageName:splashScreenImageName withPostifxIfExists:kSETOSplashScreenLandscapeWithStatusBarPostfix];
 		} else {
-			splashScreenImageName = [self splashScreenImageName:splashScreenImageName WithPostifxIfExists:kSETOSplashScreenPortraitPostfix];
+			// iOS 7.0+ portrait
+			splashScreenImageName = [self splashScreenImageName:splashScreenImageName withPostifxIfExists:kSETOSplashScreenPortraitWithStatusBarPostfix];
 		}
 	}
 	
 	// Retina postfix (@2x)
 	if ([[UIScreen mainScreen] scale] == 2.0) {
-		splashScreenImageName = [self splashScreenImageName:splashScreenImageName WithPostifxIfExists:kSETOSplashScreenRetinaPostfix];
+		splashScreenImageName = [self splashScreenImageName:splashScreenImageName withPostifxIfExists:kSETOSplashScreenRetinaPostfix];
 	}
 	
 	// Device postfix (~iPhone, ~iPad)
 	if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-		splashScreenImageName = [self splashScreenImageName:splashScreenImageName WithPostifxIfExists:kSETOSplashScreeniPhonePostfix];
+		splashScreenImageName = [self splashScreenImageName:splashScreenImageName withPostifxIfExists:kSETOSplashScreeniPhonePostfix];
 	} else {
-		splashScreenImageName = [self splashScreenImageName:splashScreenImageName WithPostifxIfExists:kSETOSplashScreeniPadPostfix];
+		splashScreenImageName = [self splashScreenImageName:splashScreenImageName withPostifxIfExists:kSETOSplashScreeniPadPostfix];
 	}
 	
 	return splashScreenImageName;
 }
 
-+ (NSString*)splashScreenImageName:(NSString*)imageName WithPostifxIfExists:(NSString*)postfix {
++ (NSString*)splashScreenImageName:(NSString*)imageName withPostifxIfExists:(NSString*)postfix {
 	NSString *combinedName = [imageName stringByAppendingString:postfix];
 	if([[NSBundle mainBundle] pathForResource:combinedName ofType:kSETOSplashScreenFileExtension]) {
 		return combinedName;
