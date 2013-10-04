@@ -6,6 +6,21 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		9E62EF5E17FF767000E34B3E /* SETOlibFramework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9E62EF5F17FF767000E34B3E /* Build configuration list for PBXAggregateTarget "SETOlibFramework" */;
+			buildPhases = (
+				9E62EF6417FF768C00E34B3E /* ShellScript */,
+			);
+			dependencies = (
+				9E62EF6317FF767B00E34B3E /* PBXTargetDependency */,
+			);
+			name = SETOlibFramework;
+			productName = SETOlibFramework;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		9E233B7E16F9F52D00AE097D /* SETOBlockingAlertViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E233B7D16F9F52D00AE097D /* SETOBlockingAlertViewDemo.m */; };
 		9E233B8116F9F55600AE097D /* SETOBlockingAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E233B8016F9F55600AE097D /* SETOBlockingAlertView.m */; };
@@ -19,7 +34,6 @@
 		9E62EE8B16CE5DCD007BEE5B /* SETOWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E62EE8916CE5DCD007BEE5B /* SETOWelcomeViewController.m */; };
 		9E62EE9116CE5FFE007BEE5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E62EE6B16CE5DBC007BEE5B /* Foundation.framework */; };
 		9E62EEA216CE6056007BEE5B /* SETOSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E62EEA116CE6056007BEE5B /* SETOSplashScreen.m */; };
-		9E62EEA516CE6A22007BEE5B /* libSETOlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E62EE9016CE5FFE007BEE5B /* libSETOlib.a */; };
 		9E62EEAE16CE6A5E007BEE5B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E62EEA716CE6A5E007BEE5B /* Default-568h@2x.png */; };
 		9E62EEAF16CE6A5E007BEE5B /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E62EEA816CE6A5E007BEE5B /* Default-Landscape.png */; };
 		9E62EEB016CE6A5E007BEE5B /* Default-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E62EEA916CE6A5E007BEE5B /* Default-Landscape@2x.png */; };
@@ -28,6 +42,11 @@
 		9E62EEB316CE6A5E007BEE5B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E62EEAC16CE6A5E007BEE5B /* Default.png */; };
 		9E62EEB416CE6A5E007BEE5B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E62EEAD16CE6A5E007BEE5B /* Default@2x.png */; };
 		9E62EEB816CE6B94007BEE5B /* SETOSplashScreenDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E62EEB716CE6B94007BEE5B /* SETOSplashScreenDemo.m */; };
+		9E62EF5917FF750000E34B3E /* SETOlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E62EF5117FF73E100E34B3E /* SETOlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E62EF5A17FF750000E34B3E /* SETOCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E91B36017FF18F3008CE707 /* SETOCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E62EF5B17FF750000E34B3E /* SETOBlockingAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E233B7F16F9F55600AE097D /* SETOBlockingAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E62EF5C17FF750000E34B3E /* SETOSplashScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E62EEA016CE6056007BEE5B /* SETOSplashScreen.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E62EF6717FF788600E34B3E /* libSETOlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E62EE9016CE5FFE007BEE5B /* libSETOlib.a */; };
 		9E718D4116CE7F00008AFC6F /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E718D3D16CE7F00008AFC6F /* Icon-72.png */; };
 		9E718D4216CE7F00008AFC6F /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E718D3E16CE7F00008AFC6F /* Icon-72@2x.png */; };
 		9E718D4316CE7F00008AFC6F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E718D3F16CE7F00008AFC6F /* Icon.png */; };
@@ -36,12 +55,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9E62EEA316CE6A1E007BEE5B /* PBXContainerItemProxy */ = {
+		9E62EF6217FF767B00E34B3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9E62EE5E16CE5DBC007BEE5B /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9E62EE8F16CE5FFE007BEE5B;
 			remoteInfo = SETOlib;
+		};
+		9E62EF6517FF77DB00E34B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E62EE5E16CE5DBC007BEE5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E62EF5E17FF767000E34B3E;
+			remoteInfo = SETOlibFramework;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -89,6 +115,7 @@
 		9E62EEAD16CE6A5E007BEE5B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		9E62EEB616CE6B94007BEE5B /* SETOSplashScreenDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SETOSplashScreenDemo.h; path = Examples/SETOSplashScreenDemo.h; sourceTree = "<group>"; };
 		9E62EEB716CE6B94007BEE5B /* SETOSplashScreenDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SETOSplashScreenDemo.m; path = Examples/SETOSplashScreenDemo.m; sourceTree = "<group>"; };
+		9E62EF5117FF73E100E34B3E /* SETOlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETOlib.h; sourceTree = "<group>"; };
 		9E718D3D16CE7F00008AFC6F /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		9E718D3E16CE7F00008AFC6F /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
 		9E718D3F16CE7F00008AFC6F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
@@ -102,7 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E62EEA516CE6A22007BEE5B /* libSETOlib.a in Frameworks */,
+				9E62EF6717FF788600E34B3E /* libSETOlib.a in Frameworks */,
 				9E62EE6A16CE5DBC007BEE5B /* UIKit.framework in Frameworks */,
 				9E62EE6C16CE5DBC007BEE5B /* Foundation.framework in Frameworks */,
 				9E62EE6E16CE5DBC007BEE5B /* CoreGraphics.framework in Frameworks */,
@@ -188,6 +215,7 @@
 		9E62EE9216CE5FFE007BEE5B /* SETOlib */ = {
 			isa = PBXGroup;
 			children = (
+				9E62EF5117FF73E100E34B3E /* SETOlib.h */,
 				9E91B36017FF18F3008CE707 /* SETOCommon.h */,
 				9E91B36117FF18F3008CE707 /* SETOCommon.m */,
 				9E233B7816F9F4FF00AE097D /* SETOBlockingAlertView */,
@@ -245,6 +273,20 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		9E62EF5817FF74F100E34B3E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E62EF5917FF750000E34B3E /* SETOlib.h in Headers */,
+				9E62EF5A17FF750000E34B3E /* SETOCommon.h in Headers */,
+				9E62EF5B17FF750000E34B3E /* SETOBlockingAlertView.h in Headers */,
+				9E62EF5C17FF750000E34B3E /* SETOSplashScreen.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		9E62EE6516CE5DBC007BEE5B /* SETOlibDemo */ = {
 			isa = PBXNativeTarget;
@@ -257,7 +299,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				9E62EEA416CE6A1E007BEE5B /* PBXTargetDependency */,
+				9E62EF6617FF77DB00E34B3E /* PBXTargetDependency */,
 			);
 			name = SETOlibDemo;
 			productName = SETOlibDemo;
@@ -271,6 +313,8 @@
 				9E62EE8C16CE5FFE007BEE5B /* Sources */,
 				9E62EE8D16CE5FFE007BEE5B /* Frameworks */,
 				9E62EE8E16CE5FFE007BEE5B /* CopyFiles */,
+				9E62EF5817FF74F100E34B3E /* Headers */,
+				9E62EF5D17FF75A600E34B3E /* Prepare Framework */,
 			);
 			buildRules = (
 			);
@@ -305,6 +349,7 @@
 			targets = (
 				9E62EE6516CE5DBC007BEE5B /* SETOlibDemo */,
 				9E62EE8F16CE5FFE007BEE5B /* SETOlib */,
+				9E62EF5E17FF767000E34B3E /* SETOlibFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -330,6 +375,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9E62EF5D17FF75A600E34B3E /* Prepare Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Prepare Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${TARGET_NAME}.framework/Versions/A/Headers\"\n\n# Link the \"Current\" version to \"A\"\n/bin/ln -sfh A \"${BUILT_PRODUCTS_DIR}/${TARGET_NAME}.framework/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${TARGET_NAME}.framework/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${TARGET_NAME}.framework/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${TARGET_NAME}.framework/Versions/A/Headers\"\n";
+		};
+		9E62EF6417FF768C00E34B3E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\nSF_TARGET_NAME=\"SETOlib\"\nSF_EXECUTABLE_PATH=\"lib${SF_TARGET_NAME}.a\"\nSF_WRAPPER_NAME=\"${SF_TARGET_NAME}.framework\"\n\n# The following conditionals come from\n# https://github.com/kstenerud/iOS-Universal-Framework\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\nSF_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\nSF_OTHER_PLATFORM=iphonesimulator\nelse\nSF_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SF_SDK_PLATFORM$ ]]\nthen\nSF_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${SF_OTHER_PLATFORM}\"\nelse\necho \"Could not find platform name from build products directory: $BUILT_PRODUCTS_DIR\"\nexit 1\nfi\n\n# Build the other platform.\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${SF_OTHER_PLATFORM}${SF_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" $ACTION\n\n# Smash the two static libraries into one fat binary and store it in the .framework\nlipo -create \"${BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" -output \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n\n# Copy the binary to the other architecture folder to have a complete framework in both.\ncp -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9E62EE6216CE5DBC007BEE5B /* Sources */ = {
@@ -358,10 +433,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9E62EEA416CE6A1E007BEE5B /* PBXTargetDependency */ = {
+		9E62EF6317FF767B00E34B3E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9E62EE8F16CE5FFE007BEE5B /* SETOlib */;
-			targetProxy = 9E62EEA316CE6A1E007BEE5B /* PBXContainerItemProxy */;
+			targetProxy = 9E62EF6217FF767B00E34B3E /* PBXContainerItemProxy */;
+		};
+		9E62EF6617FF77DB00E34B3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E62EF5E17FF767000E34B3E /* SETOlibFramework */;
+			targetProxy = 9E62EF6517FF77DB00E34B3E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -462,24 +542,48 @@
 		9E62EE9A16CE5FFE007BEE5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/SETOlib.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SETOlib/SETOlib-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)Headers";
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
 			};
 			name = Debug;
 		};
 		9E62EE9B16CE5FFE007BEE5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/SETOlib.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SETOlib/SETOlib-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)Headers";
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Release;
+		};
+		9E62EF6017FF767000E34B3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9E62EF6117FF767000E34B3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -512,6 +616,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		9E62EF5F17FF767000E34B3E /* Build configuration list for PBXAggregateTarget "SETOlibFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E62EF6017FF767000E34B3E /* Debug */,
+				9E62EF6117FF767000E34B3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
