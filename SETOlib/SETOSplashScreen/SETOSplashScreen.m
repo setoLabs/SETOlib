@@ -73,10 +73,10 @@ static SETOSplashScreen* visibleSplashScreen = nil;
 - (id)init {
 	NSString *imageName = [SETOSplashScreen splashScreenImageName];
 	UIImage *image = [UIImage imageNamed:imageName];
-    if (self = [super initWithImage:image]) {
-        // Initialization code
-    }
-    return self;
+	if (self = [super initWithImage:image]) {
+		// Initialization code
+	}
+	return self;
 }
 
 - (void)addToWindow {
@@ -90,17 +90,17 @@ static SETOSplashScreen* visibleSplashScreen = nil;
 }
 
 - (CGAffineTransform)transformForOrientation:(UIInterfaceOrientation)orientation {
-    switch (orientation) {
-        case UIInterfaceOrientationLandscapeLeft:
-            return CGAffineTransformMakeRotation(-M_PI_2);
-        case UIInterfaceOrientationLandscapeRight:
-            return CGAffineTransformMakeRotation(M_PI_2);
-        case UIInterfaceOrientationPortraitUpsideDown:
-            return CGAffineTransformMakeRotation(M_PI);
-        case UIInterfaceOrientationPortrait:
-        default:
-            return CGAffineTransformMakeRotation(0.0);
-    }
+	switch (orientation) {
+		case UIInterfaceOrientationLandscapeLeft:
+			return CGAffineTransformMakeRotation(-M_PI_2);
+		case UIInterfaceOrientationLandscapeRight:
+			return CGAffineTransformMakeRotation(M_PI_2);
+		case UIInterfaceOrientationPortraitUpsideDown:
+			return CGAffineTransformMakeRotation(M_PI);
+		case UIInterfaceOrientationPortrait:
+		default:
+			return CGAffineTransformMakeRotation(0.0);
+	}
 }
 
 + (NSString *)splashScreenImageName {
@@ -111,7 +111,7 @@ static SETOSplashScreen* visibleSplashScreen = nil;
 			splashScreenImageName = [self splashScreenImageName:splashScreenImageName withPostifxIfExists:kSETOSplashScreen4inchPostfix];
 	}
 	
-	// iPad userinterface orientation dependent postfix (-Landscape, -Portrait)
+	// iPad userinterface orientation dependent postfix (-Landscape, -Portrait) or <iOS 7.0 postfix (-748h-Landscape, -1004h-Portrait)
 	if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
 		if ([SETOCommon isBeforeSystemVersion:@"7.0"] && UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication] statusBarOrientation])) {
 			// <iOS 7.0 landscape

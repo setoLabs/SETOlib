@@ -35,21 +35,21 @@ NSUInteger const SETOExampleCount = 2;
 #pragma mark - Table view
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+	return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return SETOExampleCount;
+	return SETOExampleCount;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	static NSString *CellIdentifier = @"Cell";
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 	if (cell == nil) {
 		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
 	}
-    
-    switch (indexPath.row) {
+	
+	switch (indexPath.row) {
 		case SETOExampleSplashScreen:
 			cell.textLabel.text = @"SETOSplashScreen";
 			break;
@@ -59,8 +59,8 @@ NSUInteger const SETOExampleCount = 2;
 		default:
 			break;
 	}
-    
-    return cell;
+	
+	return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

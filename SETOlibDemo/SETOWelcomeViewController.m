@@ -11,7 +11,7 @@
 @implementation SETOWelcomeViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
+	[super viewDidLoad];
 	self.view.backgroundColor = [UIColor whiteColor];
 	
 	UILabel *welcomeLabel = [[UILabel alloc] initWithFrame:CGRectInset(self.view.bounds, 20.0, 20.0)];

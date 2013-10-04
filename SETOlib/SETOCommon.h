@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 setolabs.com. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 @interface SETOCommon : NSObject
 
 /*!
