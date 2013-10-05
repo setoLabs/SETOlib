@@ -10,8 +10,8 @@
 
 @implementation SETOCommon
 
-+ (BOOL)isBeforeSystemVersion:(NSString *)version {
-	return [[UIDevice currentDevice].systemVersion compare:version options:NSNumericSearch] == NSOrderedAscending;
++ (BOOL)systemVersionIsGreaterThanOrEqualToVersion:(NSString *)version {
+	return [[UIDevice currentDevice].systemVersion compare:version options:NSNumericSearch] != NSOrderedAscending;
 }
 
 @end

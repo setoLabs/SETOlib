@@ -9,10 +9,10 @@
 #import "SETOSplashScreen.h"
 
 NSString *const kSETOSplashScreen4inchPostfix = @"-568h";
-NSString *const kSETOSplashScreenLandscapeWithStatusBarPostfix = @"-Landscape";
-NSString *const kSETOSplashScreenLandscapeWithoutStatusBarPostfix = @"-748h-Landscape";
-NSString *const kSETOSplashScreenPortraitWithStatusBarPostfix = @"-Portrait";
-NSString *const kSETOSplashScreenPortraitWithoutStatusBarPostfix = @"-1004h-Portrait";
+NSString *const kSETOSplashScreenLandscapeWithStatusBarPostfix = @"-768h-Landscape";
+NSString *const kSETOSplashScreenLandscapeWithoutStatusBarPostfix = @"-Landscape";
+NSString *const kSETOSplashScreenPortraitWithStatusBarPostfix = @"-1024h-Portrait";
+NSString *const kSETOSplashScreenPortraitWithoutStatusBarPostfix = @"-Portrait";
 NSString *const kSETOSplashScreenRetinaPostfix = @"@2x";
 NSString *const kSETOSplashScreeniPhonePostfix = @"~iPhone";
 NSString *const kSETOSplashScreeniPadPostfix = @"~iPad";
@@ -117,18 +117,18 @@ static SETOSplashScreen *visibleSplashScreen = nil;
 	
 	// iPad userinterface orientation dependent postfix (-Landscape, -Portrait) or <iOS 7.0 postfix (-748h-Landscape, -1004h-Portrait)
 	if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-		if ([SETOCommon isBeforeSystemVersion:@"7.0"] && UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication] statusBarOrientation])) {
-			// <iOS 7.0 landscape
-			splashScreenImageName = [self splashScreenImageName:splashScreenImageName withPostifxIfExists:kSETOSplashScreenLandscapeWithoutStatusBarPostfix];
-		} else if ([SETOCommon isBeforeSystemVersion:@"7.0"] && UIInterfaceOrientationIsPortrait([[UIApplication sharedApplication] statusBarOrientation])) {
-			// <iOS 7.0 portrait
-			splashScreenImageName = [self splashScreenImageName:splashScreenImageName withPostifxIfExists:kSETOSplashScreenPortraitWithoutStatusBarPostfix];
-		} else if (UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication] statusBarOrientation])) {
+		if ([SETOCommon systemVersionIsGreaterThanOrEqualToVersion:@"7.0"] && UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication] statusBarOrientation])) {
 			// iOS 7.0+ landscape
 			splashScreenImageName = [self splashScreenImageName:splashScreenImageName withPostifxIfExists:kSETOSplashScreenLandscapeWithStatusBarPostfix];
-		} else {
+		} else if ([SETOCommon systemVersionIsGreaterThanOrEqualToVersion:@"7.0"] && UIInterfaceOrientationIsPortrait([[UIApplication sharedApplication] statusBarOrientation])) {
 			// iOS 7.0+ portrait
 			splashScreenImageName = [self splashScreenImageName:splashScreenImageName withPostifxIfExists:kSETOSplashScreenPortraitWithStatusBarPostfix];
+		} else if (UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication] statusBarOrientation])) {
+			// <iOS 7.0 landscape
+			splashScreenImageName = [self splashScreenImageName:splashScreenImageName withPostifxIfExists:kSETOSplashScreenLandscapeWithoutStatusBarPostfix];
+		} else {
+			// <iOS 7.0 portrait
+			splashScreenImageName = [self splashScreenImageName:splashScreenImageName withPostifxIfExists:kSETOSplashScreenPortraitWithoutStatusBarPostfix];
 		}
 	}
 	

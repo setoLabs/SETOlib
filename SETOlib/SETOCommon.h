@@ -11,8 +11,8 @@
 @interface SETOCommon : NSObject
 
 /*!
- * \brief true, if iOS version is less than version
+ * \brief true, if iOS version is greater than or equal to version
  */
-+ (BOOL)isBeforeSystemVersion:(NSString *)version;
++ (BOOL)systemVersionIsGreaterThanOrEqualToVersion:(NSString *)version;
 
 @end
